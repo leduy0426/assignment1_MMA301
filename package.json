@@ -2,6 +2,7 @@
   "name": "assignment1-profile-app",
   "version": "1.0.0",
   "main": "index.js",
+  "license": "0BSD",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
