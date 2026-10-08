@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
   footerNote: {
     flexDirection: 'row',
     alignItems: 'center',
-    justify.content: 'center',
+    justifyContent: 'center',
     marginTop: 32,
     gap: 8,
     paddingHorizontal: 16,
