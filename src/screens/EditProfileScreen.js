@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, Alert, StyleSheet } from 'react-native';
+import { View, Text, ScrollView, Alert, Platform, StyleSheet } from 'react-native';
 import { Formik } from 'formik';
 import { useTheme } from '../context/ThemeContext';
 import { useUser } from '../context/UserContext';
@@ -13,9 +13,18 @@ export const EditProfileScreen = ({ navigation }) => {
 
   const handleSave = (values) => {
     updateProfile(values);
-    Alert.alert('Thành công 🎉', 'Hồ sơ cá nhân của bạn đã được cập nhật!', [
-      { text: 'OK', onPress: () => navigation.goBack() },
-    ]);
+    
+    // Cross-platform handling for Web and Mobile
+    if (Platform.OS === 'web') {
+      if (typeof window !== 'undefined') {
+        window.alert('Thành công 🎉\nHồ sơ cá nhân của bạn đã được cập nhật!');
+      }
+      navigation.goBack();
+    } else {
+      Alert.alert('Thành công 🎉', 'Hồ sơ cá nhân của bạn đã được cập nhật!', [
+        { text: 'OK', onPress: () => navigation.goBack() },
+      ]);
+    }
   };
 
   return (
