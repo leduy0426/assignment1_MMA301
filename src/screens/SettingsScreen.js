@@ -14,10 +14,20 @@ export const SettingsScreen = () => {
         <ThemeToggleSwitch />
 
         <Text style={[styles.sectionHeader, { color: theme.textPrimary, marginTop: 24 }]}>
-          Thông Tin Môn Học & Ứng Dụng
+          Thông Tin Sinh Viên & Môn Học
         </Text>
 
         <View style={[styles.infoCard, { backgroundColor: theme.surface, borderColor: theme.surfaceBorder }]}>
+          <View style={styles.itemRow}>
+            <Text style={[styles.itemLabel, { color: theme.textSecondary }]}>Họ và tên:</Text>
+            <Text style={[styles.itemValue, { color: theme.textPrimary }]}>Lê Duy</Text>
+          </View>
+          <View style={styles.divider} />
+          <View style={styles.itemRow}>
+            <Text style={[styles.itemLabel, { color: theme.textSecondary }]}>MSSV & Lớp:</Text>
+            <Text style={[styles.itemValue, { color: theme.textPrimary }]}>HE194188 - SE1990</Text>
+          </View>
+          <View style={styles.divider} />
           <View style={styles.itemRow}>
             <Text style={[styles.itemLabel, { color: theme.textSecondary }]}>Môn học:</Text>
             <Text style={[styles.itemValue, { color: theme.textPrimary }]}>MMA301 - React Native</Text>
@@ -83,7 +93,7 @@ const styles = StyleSheet.create({
   footerNote: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'center',
+    justify.content: 'center',
     marginTop: 32,
     gap: 8,
     paddingHorizontal: 16,
