@@ -8,10 +8,10 @@ const initialUserData = {
   studentId: 'HE194188',
   email: 'leduy0426@gmail.com',
   phone: '0987 654 321',
-  avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=500&auto=format&fit=crop',
+  avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=500&auto=format&fit=crop',
   bio: 'Sinh viên FPT University (MSSV: HE194188 - Lớp SE1990). Đam mê lập trình di động React Native, Expo và xây dựng sản phẩm chất lượng cao.',
   location: 'Việt Nam',
-  skills: ['React Native', 'Expo', 'JavaScript', 'TypeScript', 'Node.js', 'Git', 'Sigma Style'],
+  skills: ['React Native', 'Expo', 'JavaScript', 'TypeScript', 'Node.js', 'Git'],
   stats: {
     projects: 15,
     followers: '1.5k',
