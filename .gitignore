@@ -43,7 +43,8 @@ yarn-error.*
 #docs
 /docs
 
-# Ignore binary assets for Expo Snack Git import compatibility
+# Ignore binary assets & lockfiles for lightweight Expo Snack Git import
+package-lock.json
 assets/
 *.png
 *.jpg

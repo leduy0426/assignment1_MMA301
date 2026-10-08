@@ -1,5 +1,4 @@
 import React, { createContext, useContext, useState } from 'react';
-import { SIGMA_AVATAR } from '../assets/sigmaAvatarBase64';
 
 const UserContext = createContext();
 
@@ -9,7 +8,7 @@ const initialUserData = {
   studentId: 'HE194188',
   email: 'leduy0426@gmail.com',
   phone: '0987 654 321',
-  avatar: SIGMA_AVATAR,
+  avatar: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=500&auto=format&fit=crop',
   bio: 'Sinh viên FPT University (MSSV: HE194188 - Lớp SE1990). Đam mê lập trình di động React Native, Expo và xây dựng sản phẩm chất lượng cao.',
   location: 'Việt Nam',
   skills: ['React Native', 'Expo', 'JavaScript', 'TypeScript', 'Node.js', 'Git', 'Sigma Style'],
